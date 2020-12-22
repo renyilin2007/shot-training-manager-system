@@ -24,6 +24,30 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-    src/main.cpp
+    src/main.cpp \
+    src/ui/home.cpp \
+    src/ui/login.cpp \
+    src/modules/devices/DevicesManage.cpp \
+    src/modules/personnel/PersonnelManage.cpp \
+    src/modules/distribution/DistributionScheme.cpp \
+    src/modules/process/TrainProcess.cpp \
+    src/modules/performance/PerformanceManage.cpp \
+    src/core/database.cpp
 
-HEADERS +=
+HEADERS += \
+    src/ui/home.h \
+    src/ui/login.h \
+    src/modules/devices/DevicesManage.h \
+    src/modules/personnel/PersonnelManage.h \
+    src/modules/distribution/DistributionScheme.h \
+    src/modules/process/TrainProcess.h \
+    src/modules/performance/PerformanceManage.h
+
+FORMS += \
+    src/ui/home.ui \
+    src/ui/login.ui \
+    src/modules/devices/DevicesManage.ui \
+    src/modules/personnel/PersonnelManage.ui \
+    src/modules/distribution/DistributionScheme.ui \
+    src/modules/process/TrainProcess.ui \
+    src/modules/performance/PerformanceManage.ui
