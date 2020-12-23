@@ -41,7 +41,8 @@ HEADERS += \
     src/modules/personnel/PersonnelManage.h \
     src/modules/distribution/DistributionScheme.h \
     src/modules/process/TrainProcess.h \
-    src/modules/performance/PerformanceManage.h
+    src/modules/performance/PerformanceManage.h \
+    src/modules/inc/modules.h
 
 FORMS += \
     src/ui/home.ui \
