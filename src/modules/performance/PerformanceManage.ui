@@ -1,21 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>PerformanceManage</class>
  <widget class="QWidget" name="PerformanceManage">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>440</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>导出数据</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>120</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>177</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>姓名：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_2"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>40</y>
+     <width>177</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>编号：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_3"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>130</y>
+     <width>177</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>人员组别：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_4"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>170</y>
+     <width>591</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>60</number>
+   </attribute>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>姓名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>单位</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>人员组别</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>靶机号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>靶型</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>科目类型</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>识别</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>成绩</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>评定</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>用时</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>散布等级</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>张三</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>团机关</string>
+    </property>
+   </item>
+   <item row="0" column="3">
+    <property name="text">
+     <string>A组</string>
+    </property>
+   </item>
+   <item row="0" column="4">
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item row="0" column="5">
+    <property name="text">
+     <string>胸环靶</string>
+    </property>
+   </item>
+   <item row="0" column="6">
+    <property name="text">
+     <string>精度射击</string>
+    </property>
+   </item>
+   <item row="0" column="7">
+    <property name="text">
+     <string>5发</string>
+    </property>
+   </item>
+   <item row="0" column="8">
+    <property name="text">
+     <string>命中5发，总环数44</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>李四</string>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string>团机关</string>
+    </property>
+   </item>
+   <item row="1" column="3">
+    <property name="text">
+     <string>A组</string>
+    </property>
+   </item>
+   <item row="1" column="4">
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item row="1" column="5">
+    <property name="text">
+     <string>胸环靶</string>
+    </property>
+   </item>
+   <item row="1" column="6">
+    <property name="text">
+     <string>精度射击</string>
+    </property>
+   </item>
+   <item row="1" column="7">
+    <property name="text">
+     <string>5发</string>
+    </property>
+   </item>
+   <item row="1" column="8">
+    <property name="text">
+     <string>命中5发，总环数43</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>3</string>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string>王五</string>
+    </property>
+   </item>
+   <item row="2" column="2">
+    <property name="text">
+     <string>团机关</string>
+    </property>
+   </item>
+   <item row="2" column="3">
+    <property name="text">
+     <string>A组</string>
+    </property>
+   </item>
+   <item row="2" column="4">
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item row="2" column="5">
+    <property name="text">
+     <string>胸环靶</string>
+    </property>
+   </item>
+   <item row="2" column="6">
+    <property name="text">
+     <string>精度射击</string>
+    </property>
+   </item>
+   <item row="2" column="7">
+    <property name="text">
+     <string>5发</string>
+    </property>
+   </item>
+   <item row="2" column="8">
+    <property name="text">
+     <string>命中5发，总环数44</string>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string>4</string>
+    </property>
+   </item>
+   <item row="3" column="1">
+    <property name="text">
+     <string>士兵1</string>
+    </property>
+   </item>
+   <item row="3" column="2">
+    <property name="text">
+     <string>团机关</string>
+    </property>
+   </item>
+   <item row="3" column="3">
+    <property name="text">
+     <string>B组</string>
+    </property>
+   </item>
+   <item row="3" column="4">
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item row="3" column="5">
+    <property name="text">
+     <string>胸环靶</string>
+    </property>
+   </item>
+   <item row="3" column="6">
+    <property name="text">
+     <string>精度射击</string>
+    </property>
+   </item>
+   <item row="3" column="7">
+    <property name="text">
+     <string>4发</string>
+    </property>
+   </item>
+   <item row="3" column="8">
+    <property name="text">
+     <string>命中4发，总环数42</string>
+    </property>
+   </item>
+   <item row="4" column="0">
+    <property name="text">
+     <string>5</string>
+    </property>
+   </item>
+   <item row="4" column="1">
+    <property name="text">
+     <string>士兵2</string>
+    </property>
+   </item>
+   <item row="4" column="2">
+    <property name="text">
+     <string>团机关</string>
+    </property>
+   </item>
+   <item row="4" column="3">
+    <property name="text">
+     <string>B组</string>
+    </property>
+   </item>
+   <item row="4" column="4">
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item row="4" column="5">
+    <property name="text">
+     <string>胸环靶</string>
+    </property>
+   </item>
+   <item row="4" column="6">
+    <property name="text">
+     <string>精度射击</string>
+    </property>
+   </item>
+   <item row="4" column="7">
+    <property name="text">
+     <string>4发</string>
+    </property>
+   </item>
+   <item row="4" column="8">
+    <property name="text">
+     <string>命中4发，总环数40</string>
+    </property>
+   </item>
+   <item row="5" column="0">
+    <property name="text">
+     <string>6</string>
+    </property>
+   </item>
+   <item row="5" column="1">
+    <property name="text">
+     <string>士兵3</string>
+    </property>
+   </item>
+   <item row="5" column="2">
+    <property name="text">
+     <string>团机关</string>
+    </property>
+   </item>
+   <item row="5" column="3">
+    <property name="text">
+     <string>B组</string>
+    </property>
+   </item>
+   <item row="5" column="4">
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item row="5" column="5">
+    <property name="text">
+     <string>胸环靶</string>
+    </property>
+   </item>
+   <item row="5" column="6">
+    <property name="text">
+     <string>精度射击</string>
+    </property>
+   </item>
+   <item row="5" column="7">
+    <property name="text">
+     <string>4发</string>
+    </property>
+   </item>
+   <item row="5" column="8">
+    <property name="text">
+     <string>命中4发，总环数30</string>
+    </property>
+   </item>
+   <item row="6" column="0">
+    <property name="text">
+     <string>7</string>
+    </property>
+   </item>
+   <item row="6" column="1">
+    <property name="text">
+     <string>士兵4</string>
+    </property>
+   </item>
+   <item row="6" column="2">
+    <property name="text">
+     <string>团机关</string>
+    </property>
+   </item>
+   <item row="6" column="3">
+    <property name="text">
+     <string>B组</string>
+    </property>
+   </item>
+   <item row="6" column="4">
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item row="6" column="5">
+    <property name="text">
+     <string>胸环靶</string>
+    </property>
+   </item>
+   <item row="6" column="6">
+    <property name="text">
+     <string>精度射击</string>
+    </property>
+   </item>
+   <item row="6" column="7">
+    <property name="text">
+     <string>5发</string>
+    </property>
+   </item>
+   <item row="6" column="8">
+    <property name="text">
+     <string>命中5发，总环数44</string>
+    </property>
+   </item>
+   <item row="6" column="9">
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item row="7" column="0">
+    <property name="text">
+     <string>8</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>100</y>
+     <width>177</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>单位：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <pixmapfunction/>
+ <resources/>
  <connections/>
 </ui>

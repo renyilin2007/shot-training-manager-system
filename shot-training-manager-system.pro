@@ -32,7 +32,11 @@ SOURCES += \
     src/modules/distribution/DistributionScheme.cpp \
     src/modules/process/TrainProcess.cpp \
     src/modules/performance/PerformanceManage.cpp \
-    src/core/database.cpp
+    src/core/database.cpp \
+    src/modules/distribution/SchemeItem.cpp \
+    src/modules/process/Processing.cpp \
+    src/modules/devices/Target.cpp \
+    src/modules/devices/SetTargetParam.cpp
 
 HEADERS += \
     src/ui/home.h \
@@ -42,7 +46,11 @@ HEADERS += \
     src/modules/distribution/DistributionScheme.h \
     src/modules/process/TrainProcess.h \
     src/modules/performance/PerformanceManage.h \
-    src/modules/inc/modules.h
+    src/modules/inc/modules.h \
+    src/modules/distribution/SchemeItem.h \
+    src/modules/process/Processing.h \
+    src/modules/devices/Target.h \
+    src/modules/devices/SetTargetParam.h
 
 FORMS += \
     src/ui/home.ui \
@@ -51,4 +59,8 @@ FORMS += \
     src/modules/personnel/PersonnelManage.ui \
     src/modules/distribution/DistributionScheme.ui \
     src/modules/process/TrainProcess.ui \
-    src/modules/performance/PerformanceManage.ui
+    src/modules/performance/PerformanceManage.ui \
+    src/modules/distribution/SchemeItem.ui \
+    src/modules/process/Processing.ui \
+    src/modules/devices/Target.ui \
+    src/modules/devices/SetTargetParam.ui

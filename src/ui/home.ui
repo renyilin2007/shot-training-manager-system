@@ -6,25 +6,95 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>834</width>
-    <height>519</height>
+    <width>800</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>220</y>
-     <width>101</width>
-     <height>61</height>
+     <x>80</x>
+     <y>120</y>
+     <width>631</width>
+     <height>251</height>
     </rect>
    </property>
-   <property name="text">
-    <string>PushButton</string>
-   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="DevMngBtn_HomeUI">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>设备管理</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="PersMngBtn_HomeUI">
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>人员管理</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="DistrSchemeBtn_HomeUI">
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>分配方案</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="TrainProcBtn_HomeUI">
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>训练进程</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="PerfMngBtn_HomeUI">
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>成绩管理</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
