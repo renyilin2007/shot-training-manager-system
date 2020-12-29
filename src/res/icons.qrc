@@ -1,9 +1,8 @@
 <RCC>
     <qresource prefix="/">
-        <file>D:/用户目录/下载/xitong.png</file>
-        <file>../../../../data/素材选取/背景1.jpg</file>
-        <file>../../../../data/素材选取/背景2.PNG</file>
-        <file>../../../../data/素材选取/射击训练火.png</file>
-        <file>../../../../data/素材选取/背景2-2-1.png</file>
+        <file>pic/背景1.jpg</file>
+        <file>pic/背景2.PNG</file>
+        <file>pic/背景2-2-1.png</file>
+        <file>pic/射击训练火.png</file>
     </qresource>
 </RCC>
