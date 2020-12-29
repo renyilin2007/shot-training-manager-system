@@ -64,3 +64,6 @@ FORMS += \
     src/modules/process/Processing.ui \
     src/modules/devices/Target.ui \
     src/modules/devices/SetTargetParam.ui
+
+RESOURCES += \
+    src/res/icons.qrc

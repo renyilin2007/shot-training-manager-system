@@ -13,11 +13,15 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/data/素材选取/射击训练火.png);
+</string>
+  </property>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>230</y>
+     <x>170</x>
+     <y>330</y>
      <width>160</width>
      <height>41</height>
     </rect>
@@ -32,7 +36,7 @@
        </size>
       </property>
       <property name="text">
-       <string>用户名</string>
+       <string>用户名:</string>
       </property>
      </widget>
     </item>
@@ -51,8 +55,8 @@
   <widget class="QWidget" name="horizontalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>279</y>
+     <x>170</x>
+     <y>380</y>
      <width>160</width>
      <height>41</height>
     </rect>
@@ -67,7 +71,7 @@
        </size>
       </property>
       <property name="text">
-       <string>密码</string>
+       <string>密码:</string>
       </property>
      </widget>
     </item>
@@ -83,11 +87,11 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>350</y>
+     <x>170</x>
+     <y>440</y>
      <width>158</width>
      <height>25</height>
     </rect>
@@ -109,11 +113,28 @@
     </item>
    </layout>
   </widget>
-  <zorder>LoginBtn_LogInUI</zorder>
-  <zorder>ExitBtn_LogInUI</zorder>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>40</y>
+     <width>341</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 26pt &quot;Aharoni&quot;;
+font: 28pt &quot;黑体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>实弹射击管理系统</string>
+   </property>
+  </widget>
+  <zorder>layoutWidget</zorder>
   <zorder>horizontalLayoutWidget</zorder>
   <zorder>horizontalLayoutWidget_2</zorder>
-  <zorder>textEdit_3</zorder>
+  <zorder>LoginBtn_LogInUI</zorder>
+  <zorder>label</zorder>
  </widget>
  <resources/>
  <connections/>
