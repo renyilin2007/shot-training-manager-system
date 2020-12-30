@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
@@ -22,31 +25,15 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 85, 0);
+color: rgb(255, 255, 255);
+border:none
+</string>
+   </property>
    <property name="text">
     <string>下发到靶机</string>
    </property>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>90</y>
-     <width>131</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
-    <item>
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>动作</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="comboBox_2"/>
-    </item>
-   </layout>
   </widget>
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
@@ -149,7 +136,7 @@
     <item>
      <widget class="QLabel" name="label_7">
       <property name="text">
-       <string>中单数量</string>
+       <string>中弹数量</string>
       </property>
      </widget>
     </item>
@@ -158,49 +145,11 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="layoutWidget_7">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>180</y>
-     <width>131</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_8">
-    <item>
-     <widget class="QLabel" name="label_8">
-      <property name="text">
-       <string>灯光强度</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="comboBox_5">
-      <item>
-       <property name="text">
-        <string>弱</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>中</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>强</string>
-       </property>
-      </item>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QWidget" name="layoutWidget_8">
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>180</y>
+     <y>190</y>
      <width>131</width>
      <height>22</height>
     </rect>
@@ -222,7 +171,7 @@
    <property name="geometry">
     <rect>
      <x>380</x>
-     <y>180</y>
+     <y>190</y>
      <width>131</width>
      <height>22</height>
     </rect>
@@ -244,7 +193,7 @@
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>210</y>
+     <y>220</y>
      <width>131</width>
      <height>22</height>
     </rect>
@@ -266,7 +215,7 @@
    <property name="geometry">
     <rect>
      <x>380</x>
-     <y>210</y>
+     <y>220</y>
      <width>131</width>
      <height>22</height>
     </rect>
@@ -284,12 +233,12 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>240</x>
      <y>50</y>
-     <width>131</width>
+     <width>113</width>
      <height>22</height>
     </rect>
    </property>
@@ -297,7 +246,10 @@
     <item>
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>靶型</string>
+       <string>靶型：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>
@@ -306,6 +258,125 @@
     </item>
    </layout>
   </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>501</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>250</y>
+     <width>501</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>170</y>
+     <width>501</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>70</y>
+     <width>501</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>50</y>
+     <width>36</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>靶型</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>190</y>
+     <width>48</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>灯光强度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>90</y>
+     <width>24</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>动作</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>pushButton</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>layoutWidget_3</zorder>
+  <zorder>layoutWidget_4</zorder>
+  <zorder>layoutWidget_5</zorder>
+  <zorder>layoutWidget_6</zorder>
+  <zorder>layoutWidget_7</zorder>
+  <zorder>layoutWidget_8</zorder>
+  <zorder>layoutWidget_9</zorder>
+  <zorder>layoutWidget_10</zorder>
+  <zorder>layoutWidget_11</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line_3</zorder>
+  <zorder>line_4</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>label_13</zorder>
  </widget>
  <resources/>
  <connections/>

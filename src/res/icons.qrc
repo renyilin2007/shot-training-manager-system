@@ -1,8 +1,27 @@
 <RCC>
     <qresource prefix="/">
         <file>pic/背景1.jpg</file>
-        <file>pic/背景2.PNG</file>
         <file>pic/背景2-2-1.png</file>
         <file>pic/射击训练火.png</file>
+        <file>pic/成绩管理-a.png</file>
+        <file>pic/分配方案-a.png</file>
+        <file>pic/人员管理-a.png</file>
+        <file>pic/设备管理-a.png</file>
+        <file>pic/训练进程-a.png</file>
+        <file>pic/targets/101-50胸环靶.bmp</file>
+        <file>pic/targets/102-50头环靶.bmp</file>
+        <file>pic/targets/103-50迷彩胸靶.bmp</file>
+        <file>pic/targets/104-50迷彩头靶.bmp</file>
+        <file>pic/targets/201-50半身环靶.bmp</file>
+        <file>pic/targets/202-50迷彩半身靶.bmp</file>
+        <file>pic/targets/301-50俄式胸环靶.bmp</file>
+        <file>pic/targets/401-60人体部位靶.bmp</file>
+        <file>pic/靶子图标.png</file>
+        <file>pic/顶部.PNG</file>
+        <file>pic/顶部-最亮.png</file>
+        <file>pic/顶部-亮度79.png</file>
+        <file>pic/顶部-切角.png</file>
+        <file>pic/左箭头.png</file>
+        <file>pic/左箭头2.png</file>
     </qresource>
 </RCC>

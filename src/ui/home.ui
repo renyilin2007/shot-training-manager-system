@@ -16,19 +16,6 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>300</y>
-     <width>72</width>
-     <height>15</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>设备管理</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="PersMngBtn_HomeUI">
    <property name="geometry">
     <rect>
@@ -44,8 +31,11 @@
      <height>100</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/人员管理-a.png);</string>
+   </property>
    <property name="text">
-    <string>人员管理</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="DistrSchemeBtn_HomeUI">
@@ -63,8 +53,11 @@
      <height>100</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/分配方案-a.png);</string>
+   </property>
    <property name="text">
-    <string>分配方案</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="TrainProcBtn_HomeUI">
@@ -82,8 +75,11 @@
      <height>100</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/训练进程-a.png);</string>
+   </property>
    <property name="text">
-    <string>训练进程</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="PerfMngBtn_HomeUI">
@@ -101,8 +97,11 @@
      <height>100</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/成绩管理-a.png);</string>
+   </property>
    <property name="text">
-    <string>成绩管理</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="DevMngBtn_HomeUI">
@@ -127,7 +126,44 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/pic/设备管理.png);</string>
+    <string notr="true">border-image: url(:/pic/设备管理-a.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/顶部-切角.png);
+color: rgb(255, 255, 255);
+border:none</string>
+   </property>
+   <property name="text">
+    <string>主页面</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>490</y>
+     <width>800</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.67, y1:0.516727, x2:0, y2:0.545455, stop:0 rgba(0, 85, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
    </property>
    <property name="text">
     <string/>
