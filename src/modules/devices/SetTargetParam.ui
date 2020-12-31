@@ -35,50 +35,6 @@ border:none
     <string>下发到靶机</string>
    </property>
   </widget>
-  <widget class="QWidget" name="layoutWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>90</y>
-     <width>131</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
-    <item>
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>显示角度</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="comboBox_3"/>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget_3">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>90</y>
-     <width>131</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_4">
-    <item>
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>隐藏角度</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="comboBox_4"/>
-    </item>
-   </layout>
-  </widget>
   <widget class="QWidget" name="layoutWidget_4">
    <property name="geometry">
     <rect>
@@ -126,8 +82,8 @@ border:none
   <widget class="QWidget" name="layoutWidget_6">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>150</y>
+     <x>380</x>
+     <y>90</y>
      <width>131</width>
      <height>22</height>
     </rect>
@@ -336,7 +292,7 @@ border:none
     </rect>
    </property>
    <property name="text">
-    <string>灯光强度</string>
+    <string>灯光</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -358,14 +314,34 @@ border:none
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QWidget" name="layoutWidget_7">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>90</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>显隐次数</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_8"/>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label_8</zorder>
+  <zorder>label_2</zorder>
   <zorder>pushButton</zorder>
-  <zorder>layoutWidget</zorder>
-  <zorder>layoutWidget_2</zorder>
-  <zorder>layoutWidget_3</zorder>
   <zorder>layoutWidget_4</zorder>
   <zorder>layoutWidget_5</zorder>
   <zorder>layoutWidget_6</zorder>
-  <zorder>layoutWidget_7</zorder>
   <zorder>layoutWidget_8</zorder>
   <zorder>layoutWidget_9</zorder>
   <zorder>layoutWidget_10</zorder>
@@ -375,8 +351,8 @@ border:none
   <zorder>line_2</zorder>
   <zorder>line_3</zorder>
   <zorder>line_4</zorder>
-  <zorder>comboBox</zorder>
   <zorder>label_13</zorder>
+  <zorder>layoutWidget_7</zorder>
  </widget>
  <resources/>
  <connections/>

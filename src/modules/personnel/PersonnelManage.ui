@@ -371,6 +371,25 @@ background-color:transparent</string>
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>80</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 85, 0);
+color: rgb(255, 255, 255);
+border:none
+</string>
+   </property>
+   <property name="text">
+    <string>导出人员列表</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

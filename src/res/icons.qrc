@@ -4,7 +4,6 @@
         <file>pic/背景2-2-1.png</file>
         <file>pic/射击训练火.png</file>
         <file>pic/成绩管理-a.png</file>
-        <file>pic/分配方案-a.png</file>
         <file>pic/人员管理-a.png</file>
         <file>pic/设备管理-a.png</file>
         <file>pic/训练进程-a.png</file>
@@ -23,5 +22,6 @@
         <file>pic/顶部-切角.png</file>
         <file>pic/左箭头.png</file>
         <file>pic/左箭头2.png</file>
+        <file>pic/训练方案-a.png</file>
     </qresource>
 </RCC>

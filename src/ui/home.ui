@@ -54,7 +54,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/pic/分配方案-a.png);</string>
+    <string notr="true">border-image: url(:/pic/训练方案-a.png);</string>
    </property>
    <property name="text">
     <string/>
