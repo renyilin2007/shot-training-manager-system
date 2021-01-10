@@ -15,6 +15,9 @@ public:
     explicit SetTargetParam(QWidget *parent = 0);
     ~SetTargetParam();
 
+private slots:
+    void on_SetToTarBtn_SetTarParamUI_clicked();
+
 private:
     Ui::SetTargetParam *ui;
 };

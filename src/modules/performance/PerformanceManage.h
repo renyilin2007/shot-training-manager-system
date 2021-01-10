@@ -15,6 +15,13 @@ public:
     explicit PerformanceManage(QWidget *parent = 0);
     ~PerformanceManage();
 
+private slots:
+    void on_QueryBtn_PerforMngUI_clicked();
+
+    void on_ExportDataBtn_PerforMngUI_clicked();
+
+    void on_pushButton_5_clicked();
+
 private:
     Ui::PerformanceManage *ui;
 };

@@ -15,6 +15,17 @@ public:
     explicit PersonnelManage(QWidget *parent = 0);
     ~PersonnelManage();
 
+private slots:
+    void on_pushButton_6_clicked();
+
+    void on_GroupMngBtn_PersonMngUI_clicked();
+
+    void on_AddPersonBtn_PersonMngUI_clicked();
+
+    void on_ImportListBtn_PersonMngUI_clicked();
+
+    void on_ExportListBtn_PersonMngUI_clicked();
+
 private:
     Ui::PersonnelManage *ui;
 };

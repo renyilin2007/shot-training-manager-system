@@ -15,6 +15,9 @@ public:
     explicit TrainProcess(QWidget *parent = 0);
     ~TrainProcess();
 
+private slots:
+    void on_pushButton_5_clicked();
+
 private:
     Ui::TrainProcess *ui;
 };

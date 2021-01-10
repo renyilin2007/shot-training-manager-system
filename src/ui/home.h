@@ -24,8 +24,14 @@ public:
     DistributionScheme m_DistruSche;
     PerformanceManage m_PerforMng;
     TrainProcess m_TrainProc;
+    Processing m_Processing;
+
 private slots:
     void on_DevMngBtn_HomeUI_clicked();
+    void on_DistrSchemeBtn_HomeUI_clicked();
+    void on_PersMngBtn_HomeUI_clicked();
+    void on_TrainProcBtn_HomeUI_clicked();
+    void on_PerfMngBtn_HomeUI_clicked();
 };
 
 #endif // HOME_H

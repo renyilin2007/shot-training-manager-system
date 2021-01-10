@@ -5,4 +5,5 @@
 #include "src/modules/performance/PerformanceManage.h"
 #include "src/modules/personnel/PersonnelManage.h"
 #include "src/modules/process/TrainProcess.h"
+#include "src/modules/process/Processing.h"
 #endif // MODULES_H
