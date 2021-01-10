@@ -363,7 +363,7 @@
     </property>
    </item>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="QueryBtn_ScheItemUI">
    <property name="geometry">
     <rect>
      <x>520</x>
@@ -499,7 +499,7 @@ border:none
   </widget>
   <zorder>layoutWidget</zorder>
   <zorder>tableWidget</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>QueryBtn_ScheItemUI</zorder>
   <zorder>layoutWidget</zorder>
   <zorder>label_9</zorder>
  </widget>

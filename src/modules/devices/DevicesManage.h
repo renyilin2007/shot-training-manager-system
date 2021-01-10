@@ -15,6 +15,9 @@ public:
     explicit DevicesManage(QWidget *parent = 0);
     ~DevicesManage();
 
+private slots:
+    void on_BackBtn_DevMngUI_clicked();
+
 private:
     Ui::DevicesManage *ui;
 };

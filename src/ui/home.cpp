@@ -12,3 +12,9 @@ home::~home()
 {
     delete ui;
 }
+
+void home::on_DevMngBtn_HomeUI_clicked()
+{
+    this->hide();
+    m_DevMng.show();
+}

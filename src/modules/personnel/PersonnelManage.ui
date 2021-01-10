@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="ImportListBtn_PersonMngUI">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -35,7 +35,7 @@ border:none
     <string>导入人员列表</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="AddPersonBtn_PersonMngUI">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -54,7 +54,7 @@ border:none
     <string>增加人员</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="GroupMngBtn_PersonMngUI">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -371,7 +371,7 @@ background-color:transparent</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="ExportListBtn_PersonMngUI">
    <property name="geometry">
     <rect>
      <x>550</x>

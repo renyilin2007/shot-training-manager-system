@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="ExportDataBtn_PerforMngUI">
    <property name="geometry">
     <rect>
      <x>370</x>
@@ -35,7 +35,7 @@ border:none
     <string>导出数据</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="QueryBtn_PerforMngUI">
    <property name="geometry">
     <rect>
      <x>600</x>

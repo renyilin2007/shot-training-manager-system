@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/pic/射击训练火.png);
-</string>
+border:none</string>
   </property>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">

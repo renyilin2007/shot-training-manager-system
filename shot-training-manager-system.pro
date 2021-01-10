@@ -26,7 +26,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     src/main.cpp \
     src/ui/home.cpp \
-    src/ui/login.cpp \
     src/modules/devices/DevicesManage.cpp \
     src/modules/personnel/PersonnelManage.cpp \
     src/modules/distribution/DistributionScheme.cpp \
@@ -36,11 +35,11 @@ SOURCES += \
     src/modules/distribution/SchemeItem.cpp \
     src/modules/process/Processing.cpp \
     src/modules/devices/Target.cpp \
-    src/modules/devices/SetTargetParam.cpp
+    src/modules/devices/SetTargetParam.cpp \
+    src/ui/LoginMainWindow.cpp
 
 HEADERS += \
     src/ui/home.h \
-    src/ui/login.h \
     src/modules/devices/DevicesManage.h \
     src/modules/personnel/PersonnelManage.h \
     src/modules/distribution/DistributionScheme.h \
@@ -50,11 +49,13 @@ HEADERS += \
     src/modules/distribution/SchemeItem.h \
     src/modules/process/Processing.h \
     src/modules/devices/Target.h \
-    src/modules/devices/SetTargetParam.h
+    src/modules/devices/SetTargetParam.h \
+    src/modules/inc/modules.h \
+    src/ui/LoginMainWindow.h
+
 
 FORMS += \
     src/ui/home.ui \
-    src/ui/login.ui \
     src/modules/devices/DevicesManage.ui \
     src/modules/personnel/PersonnelManage.ui \
     src/modules/distribution/DistributionScheme.ui \
@@ -63,7 +64,8 @@ FORMS += \
     src/modules/distribution/SchemeItem.ui \
     src/modules/process/Processing.ui \
     src/modules/devices/Target.ui \
-    src/modules/devices/SetTargetParam.ui
+    src/modules/devices/SetTargetParam.ui \
+    src/ui/LoginMainWindow.ui
 
 RESOURCES += \
     src/res/icons.qrc

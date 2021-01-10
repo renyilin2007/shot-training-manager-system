@@ -4,5 +4,5 @@
 #include "src/modules/distribution/DistributionScheme.h"
 #include "src/modules/performance/PerformanceManage.h"
 #include "src/modules/personnel/PersonnelManage.h"
-#include "src/modules/process//TrainProcess.h"
+#include "src/modules/process/TrainProcess.h"
 #endif // MODULES_H
