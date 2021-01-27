@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QPainter>
-
+#include "QPainter.h"
 namespace Ui {
 class Target;
 }
@@ -17,6 +17,7 @@ public:
     ~Target();
 
     void connectSignal();
+private slots:
 private:
     void paintEvent(QPaintEvent *event);
     Ui::Target *ui;

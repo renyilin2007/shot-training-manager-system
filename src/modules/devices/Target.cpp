@@ -9,6 +9,7 @@ Target::Target(QWidget *parent) :
     ui(new Ui::Target)
 {
     ui->setupUi(this);
+    m_y = 10;
 }
 
 Target::~Target()
