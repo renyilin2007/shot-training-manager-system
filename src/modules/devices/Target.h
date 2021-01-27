@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QPainter>
 #include "QPainter.h"
+#include "QPushButton.h"
+
 namespace Ui {
 class Target;
 }

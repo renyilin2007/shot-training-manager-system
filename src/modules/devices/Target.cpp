@@ -9,6 +9,7 @@ Target::Target(QWidget *parent) :
     ui(new Ui::Target)
 {
     ui->setupUi(this);
+
     m_y = 10;
 }
 
@@ -30,13 +31,13 @@ void Target::connectSignal()
 
 void Target::paintEvent(QPaintEvent *event)
 {
-    QPainter painter(this);  //创建一位画家
+    QPainter painter(this);  //创建一位画�?
     QPen pen(QColor(255,0,0));  //创建画笔
     pen.setWidth(3);  //笔宽
     painter.setPen(pen);  //给画家一根笔
 
     QPixmap pixmap;
-    pixmap.load(":/pic/targets/101-50胸环靶.bmp");
+    pixmap.load(":/pic/targets/101-50胸环�?bmp");
     int width = pixmap.width();
     int height = pixmap.height();
     resize(width, height);
