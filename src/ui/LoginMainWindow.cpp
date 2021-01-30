@@ -19,8 +19,8 @@ LoginMainWindow::~LoginMainWindow()
 
 void LoginMainWindow::on_LoginBtn_LogInUI_clicked()
 {
-    if(ui->UsrNameLineEdit_LogInUI->text().trimmed() == tr("admin") && ui->PassWdLineEdit_LogInUI->text() == tr("123456"))
-    //if(1)
+    //if(ui->UsrNameLineEdit_LogInUI->text().trimmed() == tr("admin") && ui->PassWdLineEdit_LogInUI->text() == tr("123456"))
+    if(1)
     {
         this->hide();
         m_home.show();

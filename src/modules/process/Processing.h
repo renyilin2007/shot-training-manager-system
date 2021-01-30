@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "src/modules/devices/Target.h"
+#include "src/modules/devices/simutarget.h"
 
 namespace Ui {
 class Processing;
@@ -31,6 +32,8 @@ private slots:
     void on_pushButton_9_clicked();
 
     void on_pushButton_10_clicked();
+
+    void on_pushButton_2_clicked();
 
 public:
     Target Tar;

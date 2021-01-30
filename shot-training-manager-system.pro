@@ -36,7 +36,8 @@ SOURCES += \
     src/modules/process/Processing.cpp \
     src/modules/devices/Target.cpp \
     src/modules/devices/SetTargetParam.cpp \
-    src/ui/LoginMainWindow.cpp
+    src/ui/LoginMainWindow.cpp \
+    src/modules/devices/simutarget.cpp
 
 HEADERS += \
     src/ui/home.h \
@@ -51,7 +52,8 @@ HEADERS += \
     src/modules/devices/Target.h \
     src/modules/devices/SetTargetParam.h \
     src/modules/inc/modules.h \
-    src/ui/LoginMainWindow.h
+    src/ui/LoginMainWindow.h \
+    src/modules/devices/simutarget.h
 
 
 FORMS += \
@@ -65,7 +67,8 @@ FORMS += \
     src/modules/process/Processing.ui \
     src/modules/devices/Target.ui \
     src/modules/devices/SetTargetParam.ui \
-    src/ui/LoginMainWindow.ui
+    src/ui/LoginMainWindow.ui \
+    src/modules/devices/simutarget.ui
 
 RESOURCES += \
     src/res/icons.qrc

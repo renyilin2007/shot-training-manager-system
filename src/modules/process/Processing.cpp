@@ -2,6 +2,7 @@
 #include "ui_Processing.h"
 #include "src/ui/LoginMainWindow.h"
 #include "qmessagebox.h"
+extern SimuTarget *g_pSimuTar;
 
 Processing::Processing(QWidget *parent) :
     QWidget(parent),
@@ -51,6 +52,12 @@ void Processing::on_EndTrainBtn_ProcUI_clicked()
 void Processing::on_pushButton_clicked()
 {
     Tar.show();
+    if(NULL == g_pSimuTar)
+    {
+        g_pSimuTar = new SimuTarget;
+        Tar.connectSignal();
+    }
+    g_pSimuTar->show();
 }
 
 void Processing::on_pushButton_6_clicked()
