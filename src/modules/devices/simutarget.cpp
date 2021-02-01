@@ -1,6 +1,11 @@
 #include "simutarget.h"
 #include "ui_simutarget.h"
 SimuTarget *g_pSimuTar;
+SimuTarget *g_pSimuTar2;
+SimuTarget *g_pSimuTar3;
+SimuTarget *g_pSimuTar4;
+SimuTarget *g_pSimuTar5;
+SimuTarget *g_pSimuTar6;
 
 SimuTarget::SimuTarget(QWidget *parent) :
     QWidget(parent),
@@ -11,6 +16,7 @@ SimuTarget::SimuTarget(QWidget *parent) :
 
 SimuTarget::~SimuTarget()
 {
+    m_init = false;
     delete ui;
 }
 
@@ -29,8 +35,12 @@ void SimuTarget::paintEvent(QPaintEvent *event)
     pixmap2 = pixmap.scaled(width/2, height/2, Qt::KeepAspectRatio);
     painter.drawPixmap(0,0,pixmap2);//图片原始大小输出
 
-    //发送信号给target
-    emit sendData(m_mousePos);
+    QVector<QPoint>::iterator iter;
+    for (iter=m_VecPos.begin();iter!=m_VecPos.end();iter++)
+    {
+        if(iter->x() != 0 && iter->y() != 0)
+            painter.drawPoint(iter->x(), iter->y());
+    }
 }
 void SimuTarget::mousePressEvent(QMouseEvent *event)
 {
@@ -38,6 +48,20 @@ void SimuTarget::mousePressEvent(QMouseEvent *event)
     {
         //todo ...
         m_mousePos = event->pos();
+        m_VecPos.push_back(event->pos());
         update();
+
+        QPoint mousePos;
+        mousePos.setX(m_mousePos.x()*2);
+        mousePos.setY(m_mousePos.y()*2);
+        //发送信号给target
+        emit sendData(mousePos);
     }
 }
+
+void SimuTarget::mouseMoveEvent(QMouseEvent *event)
+{
+    QString msg;
+    msg.sprintf("move: %d,%d",event->x(), event->y());
+
+    this->setText(msg);

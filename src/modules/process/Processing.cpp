@@ -3,7 +3,11 @@
 #include "src/ui/LoginMainWindow.h"
 #include "qmessagebox.h"
 extern SimuTarget *g_pSimuTar;
-
+extern SimuTarget *g_pSimuTar2;
+extern SimuTarget *g_pSimuTar3;
+extern SimuTarget *g_pSimuTar4;
+extern SimuTarget *g_pSimuTar5;
+extern SimuTarget *g_pSimuTar6;
 Processing::Processing(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Processing)
@@ -55,32 +59,62 @@ void Processing::on_pushButton_clicked()
     if(NULL == g_pSimuTar)
     {
         g_pSimuTar = new SimuTarget;
-        Tar.connectSignal();
+        Tar.connectSignal(g_pSimuTar);
     }
     g_pSimuTar->show();
 }
 
 void Processing::on_pushButton_6_clicked()
 {
-    Tar.show();
+    Tar2.show();
+    if(NULL == g_pSimuTar2)
+    {
+        g_pSimuTar2 = new SimuTarget;
+        Tar2.connectSignal(g_pSimuTar2);
+    }
+    g_pSimuTar2->show();
 }
 
 void Processing::on_pushButton_7_clicked()
 {
-    Tar.show();
+    Tar3.show();
+    if(NULL == g_pSimuTar3)
+    {
+        g_pSimuTar3 = new SimuTarget;
+        Tar3.connectSignal(g_pSimuTar3);
+    }
+    g_pSimuTar3->show();
 }
 
 void Processing::on_pushButton_8_clicked()
 {
-    Tar.show();
+    Tar4.show();
+    if(NULL == g_pSimuTar4)
+    {
+        g_pSimuTar4 = new SimuTarget;
+        Tar4.connectSignal(g_pSimuTar4);
+    }
+    g_pSimuTar4->show();
 }
 
 void Processing::on_pushButton_9_clicked()
 {
-    Tar.show();
+    Tar5.show();
+    if(NULL == g_pSimuTar5)
+    {
+        g_pSimuTar5 = new SimuTarget;
+        Tar5.connectSignal(g_pSimuTar5);
+    }
+    g_pSimuTar5->show();
 }
 
 void Processing::on_pushButton_10_clicked()
 {
-    Tar.show();
+    Tar6.show();
+    if(NULL == g_pSimuTar6)
+    {
+        g_pSimuTar6 = new SimuTarget;
+        Tar6.connectSignal(g_pSimuTar6);
+    }
+    g_pSimuTar6->show();
 }

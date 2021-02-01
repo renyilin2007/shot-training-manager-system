@@ -4,6 +4,9 @@
 #include <QWidget>
 #include <QMouseEvent>
 #include <QPainter>
+#include <QVector>
+
+
 namespace Ui {
 class SimuTarget;
 }
@@ -17,11 +20,12 @@ public:
     ~SimuTarget();
     void mousePressEvent(QMouseEvent *event);
     void paintEvent(QPaintEvent *event);
-
+    void mouseMoveEvent(QMouseEvent *event);
 private:
     Ui::SimuTarget *ui;
     QPoint m_mousePos;
-
+    bool m_init = false;//false: uninit true:init
+    QVector<QPoint> m_VecPos;
 signals:
     void sendData(QPoint pos);
 

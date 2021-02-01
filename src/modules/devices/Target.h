@@ -3,9 +3,10 @@
 
 #include <QWidget>
 #include <QPainter>
+#include <QVector>
 #include "QPainter.h"
 #include "QPushButton.h"
-
+#include "src/modules/devices/simutarget.h"
 namespace Ui {
 class Target;
 }
@@ -18,12 +19,14 @@ public:
     explicit Target(QWidget *parent = 0);
     ~Target();
 
-    void connectSignal();
+    void connectSignal(SimuTarget *pSimuTar);
 private slots:
 private:
     void paintEvent(QPaintEvent *event);
     Ui::Target *ui;
     QPoint m_pos;
+    QVector<QPoint> m_VecPos;
+    bool m_init = false;//false: uninit true:init
 private slots:
     void recvData(QPoint pos);
 };

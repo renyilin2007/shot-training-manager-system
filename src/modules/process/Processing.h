@@ -37,6 +37,11 @@ private slots:
 
 public:
     Target Tar;
+    Target Tar2;
+    Target Tar3;
+    Target Tar4;
+    Target Tar5;
+    Target Tar6;
 private:
     Ui::Processing *ui;
 };

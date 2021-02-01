@@ -6,4 +6,5 @@
 #include "src/modules/personnel/PersonnelManage.h"
 #include "src/modules/process/TrainProcess.h"
 #include "src/modules/process/Processing.h"
+#include "src/modules/devices/simutarget.h"
 #endif // MODULES_H
